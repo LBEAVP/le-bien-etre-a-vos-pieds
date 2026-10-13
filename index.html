@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marie-Hélène SALVI | Réflexologie Plantaire à Voujeaucourt (25420)</title>
+    <meta name="description" content="Le bien-être à vos pieds - Marie-Hélène SALVI, praticienne certifiée en réflexologie plantaire à Voujeaucourt (25420). Soulagez le stress, les troubles du sommeil et les tensions sur rendez-vous.">
+    
+    <!-- Google Fonts Douces & Organiques -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Style exclusif pour la Bannière RGPD Sticky et le Footer Centré -->
+    <style>
+        .cookie-banner-sticky {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: rgba(247, 243, 238, 0.96); /* Fond lin très léger et opaque */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(70, 115, 96, 0.15);
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        @media (min-width: 768px) {
+            .cookie-banner-sticky {
+                flex-direction: row;
+                padding: 15px 40px;
+            }
+        }
+
+        .cookie-banner-content {
+            flex: 1;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        @media (min-width: 768px) {
+            .cookie-banner-content {
+                margin-bottom: 0;
+                margin-right: 30px;
+            }
+        }
+
+        .cookie-banner-content p {
+            font-size: 0.85rem;
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .cookie-banner-content strong {
+            color: var(--primary-sage);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .cookie-banner-content a {
+            color: var(--secondary-blossom);
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .cookie-banner-actions {
+            flex-shrink: 0;
+        }
+
+        .cookie-banner-actions button {
+            padding: 10px 24px;
+            font-size: 0.85rem;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        /* --- Nouveaux Styles pour Centrer le Footer --- */
+        footer {
+            background: rgba(255, 255, 255, 0.68);
+            backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(70, 115, 96, 0.15);
+            padding: 36px 20px 80px; /* Padding bottom augmenté pour la bannière sticky */
+        }
+
+        .footer-content {
+            max-width: 1180px;
+            margin: 0 auto 22px;
+            display: flex;
+            justify-content: center; /* Centrage horizontal principal */
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 40px; /* Espace entre les colonnes */
+            text-align: left;
+        }
+
+        .footer-brand {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+        }
+
+        .footer-brand .logo {
+            font-size: 1.25rem;
+            margin-bottom: 6px;
+        }
+
+        .footer-brand p {
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+
+        .footer-links {
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+        }
+
+        .footer-links h4 {
+            color: var(--primary-sage);
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+            font-size: 0.88rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-blossom);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(70, 115, 96, 0.12);
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        /* Responsivité du Footer Centré */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center; /* Centrage sur mobile */
+                text-align: center;
+            }
+            .footer-links li {
+                display: flex;
+                justify-content: center;
+            }
+            .footer-brand {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bulles douces et organiques en arrière-plan -->
+    <div class="background-shapes">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+    </div>
+
+    <!-- Navigation Glassmorphism -->
+    <header>
+        <nav class="glass-panel">
+            <a href="#accueil" class="logo-container">
+                <div class="logo">
+                    <i class="fa-solid fa-spa"></i> Marie-Hélène SALVI
+                </div>
+                <span class="logo-sub">« Le bien-être à vos pieds »</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#reflexologie">La Réflexologie</a></li>
+                <li><a href="#seance">Une Séance</a></li>
+                <li><a href="#apropos">Votre Praticienne</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#contact" class="nav-cta">Prendre RDV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="accueil">
+            <div class="hero-container">
+                <div class="hero-glass-card fade-up">
+                    <div class="promo-pill">
+                        <i class="fa-solid fa-gift"></i>
+                        <span>Offre découverte : Jusqu’au 31/12/2026, la 3ème séance vous est offerte</span>
+                    </div>
+
+                    <h1>Le <em>bien-être à vos pieds</em> à Voujeaucourt</h1>
+                    <p class="subtitle">Marie-Hélène SALVI — Praticienne certifiée en Réflexologie Plantaire</p>
+
+                    <div class="hero-questions">
+                        <span class="question-tag"><i class="fa-solid fa-feather-pointed blossom-text"></i> Stress ?</span>
+                        <span class="question-tag"><i class="fa-solid fa-moon blossom-text"></i> Troubles du sommeil ?</span>
+                        <span class="question-tag"><i class="fa-solid fa-person-rays blossom-text"></i> Tensions musculaires ?</span>
+                        <span class="question-tag"><i class="fa-solid fa-leaf sage-text"></i> Troubles digestifs ?</span>
+                        <span class="question-tag"><i class="fa-solid fa-heart blossom-text"></i> Besoin de relaxation ?</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Avez-vous pensé à la réflexologie plantaire ? Offrez-vous une parenthèse de douceur naturelle pour soulager vos tensions physiques et émotionnelles et retrouver un meilleur équilibre dans votre corps et dans votre tête.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary">
+                            <i class="fa-regular fa-calendar-check"></i> Prendre rendez-vous
+                        </a>
+                        <a href="tel:0633143485" class="btn-secondary">
+                            <i class="fa-solid fa-phone"></i> 06 33 14 34 85
+                        </a>
+                    </div>
+
+                    <div class="hero-trust-bar">
+                        <span><i class="fa-solid fa-award sage-text"></i> Certifiée Édulys Formation</span>
+                        <span><i class="fa-solid fa-hand-holding-medical blossom-text"></i> 20 ans d'expérience médicale</span>
+                        <span><i class="fa-solid fa-location-dot sage-text"></i> 25420 Voujeaucourt</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual-stack fade-up" style="transition-delay: 0.12s;">
+                    <!-- Pancarte en bois -->
+                    <div class="wood-sign-card">
+                        <img src="IMG_20260715_164932.jpg"
+                             alt="Pancarte en bois Le bien-être à vos pieds - Marie-Hélène SALVI"
+                             class="zoomable">
+                        <p class="wood-sign-caption">« Le bien-être à vos pieds » — Accueil sur rendez-vous</p>
+                    </div>
+
+                    <!-- Massage des pieds -->
+                    <div class="hero-photo-showcase">
+                        <img src="IMG_20260716_095135.jpg"
+                             alt="Soin en réflexologie plantaire pratiqué par Marie-Hélène SALVI"
+                             class="zoomable">
+                        <p class="wood-sign-caption"><i class="fa-solid fa-spa blossom-text"></i> Réflexologie plantaire & détente profonde</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION : LA RÉFLEXOLOGIE -->
+        <section class="reflexologie" id="reflexologie">
+            <span class="section-badge fade-up">Harmonie & Équilibre Naturel</span>
+            <h2 class="section-title fade-up">La réflexologie, c’est quoi ?</h2>
+            <p class="section-subtitle fade-up">
+                Une méthode simple, douce et naturelle pour retrouver un mieux-être durable grâce à la stimulation des zones réflexes du pied.
+            </p>
+
+            <div class="reflexo-grid">
+                <div class="glass-panel reflexo-text fade-up">
+                    <h3>Chaque zone du pied correspond à un organe</h3>
+                    <p>
+                        Méthode simple et naturelle pour retrouver un mieux-être, la <strong>réflexologie plantaire</strong> repose sur l’idée que chaque zone du pied correspond à un organe ou une région du corps.
+                    </p>
+                    <p>
+                        Des points de pression sur ces zones, appelées <strong>zones réflexes</strong>, vont permettre grâce au système nerveux, de contribuer au bon fonctionnement de ces organes, de soulager les tensions physiques et émotionnelles …..
+                    </p>
+
+                    <div class="medical-notice">
+                        <i class="fa-solid fa-seedling sage-text"></i>
+                        <strong>À noter :</strong> La réflexologie ne remplace en aucun cas la médecine. Toutefois, ses bienfaits sont nombreux avec une action efficace sur votre équilibre au quotidien.
+                    </div>
+                </div>
+
+                <div class="reflexo-images fade-up" style="transition-delay: 0.1s;">
+                    <div class="glass-panel photo-card">
+                        <img src="IMG_20260716_095135.jpg"
+                             alt="Séance de massage en réflexologie plantaire"
+                             class="zoomable">
+                        <span class="photo-caption"><i class="fa-solid fa-hand-holding-heart blossom-text"></i> Pressions plantaires douces et ciblées</span>
+                    </div>
+                    <div class="glass-panel photo-card">
+                        <!-- Schéma des pieds -->
+                        <img src="20261005_184946.jpg"
+                             alt="Planche anatomique des zones réflexes de la réflexologie plantaire"
+                             class="zoomable">
+                        <span class="photo-caption"><i class="fa-solid fa-magnifying-glass-plus sage-text"></i> Carte des zones réflexes (cliquer)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cartes des Bienfaits -->
+            <div class="benefits-grid">
+                <div class="glass-panel benefit-card fade-up">
+                    <div class="benefit-icon-wrapper">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h4>Apaisement du stress</h4>
+                    <p>Réduit l’anxiété et les symptômes liés au stress, libère les tensions émotionnelles et procure une détente immédiate.</p>
+                </div>
+
+                <div class="glass-panel benefit-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="benefit-icon-wrapper">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <h4>Sommeil Réparateur</h4>
+                    <p>Action douce et efficace sur les troubles du sommeil pour retrouver des nuits sereines.</p>
+                </div>
+
+                <div class="glass-panel benefit-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="benefit-icon-wrapper">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4>Confort Digestif & Cycle</h4>
+                    <p>Aide à réguler et soulager les troubles digestifs ainsi que les inconforts menstruels.</p>
+                </div>
+
+                <div class="glass-panel benefit-card fade-up" style="transition-delay: 0.3s;">
+                    <div class="benefit-icon-wrapper">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <h4>Détente musculaire</h4>
+                    <p>Dénoue les tensions physiques accumulées et favorise une relaxation profonde.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION : DÉROULEMENT D'UNE SÉANCE -->
+        <section class="seance" id="seance">
+            <span class="section-badge fade-up">Un Moment Pour Vous</span>
+            <h2 class="section-title fade-up">Comment se déroule une séance ?</h2>
+            <p class="section-subtitle fade-up">
+                La réflexologie est ouverte à tous : enfants, adultes et personnes âgées. Elle est sans danger (il existe cependant quelques contre-indications).
+            </p>
+
+            <div class="seance-wrapper">
+                <div class="steps-list">
+                    <div class="glass-panel step-item fade-up">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Temps d’écoute et protocole personnalisé</h3>
+                            <p>Lors de la première séance, quelques questions vous seront posées sur votre état de santé général, vos antécédents médicaux, votre mode de vie et vous exprimerez les motifs de votre venue. Cet échange permettra d’établir un protocole entièrement adapté à vos besoins.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel step-item fade-up" style="transition-delay: 0.1s;">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>1 heure pour prendre soin de vous.</h3>
+                            <p>Après un bain de pieds (pour favoriser la détente musculaire), vous serez confortablement installé(e) sur une table de massage. Vous vous laisserez porter par la douceur de la musique et vous vous détendrez peu à peu ! La séance de réflexologie durera environ 1 heure, pendant laquelle des points de pressions seront pratiqués sur chaque zone de vos pieds. Pour les enfants (jusqu’à 12 ans), la durée de la séance sera plus courte, environ 30 minutes. Chaque séance sera adaptée à vos besoins et à votre ressenti (accentuation des pressions ou pressions plus douces sur certaines zones, durée de la séance…)</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel step-item fade-up" style="transition-delay: 0.2s;">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Détente immédiate et ressenti</h3>
+                            <p>A la fin de la séance, vous vous sentirez profondément détendu, avec une agréable sensation de bien-être. Quelques effets secondaires pourront peut-être se faire sentir (fatigue, frissons, …) mais disparaitront rapidement. Un point sera fait sur votre ressenti, vos sensations afin d’envisager la suite à donner à cette séance.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel step-item fade-up" style="transition-delay: 0.3s;">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Accompagnement optimal</h3>
+                            <p>Selon vos besoins et votre réceptivité, 2 à 3 séances seront généralement nécessaires pour obtenir un résultat optimal et durable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-panel cabinet-showcase fade-up" style="transition-delay: 0.15s;">
+                    <img src="IMG_20260707_092837.jpg"
+                         alt="Espace de soin et table de massage à Voujeaucourt"
+                         class="zoomable">
+                    <h4>Votre cocon de sérénité</h4>
+                    <p>Un espace calme, lumineux et chaleureux pour lâcher prise en toute confiance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION : À PROPOS -->
+        <section class="about" id="apropos">
+            <div class="glass-panel about-container fade-up">
+                <div class="about-text">
+                    <span class="section-badge" style="text-align: left;">Votre Praticienne</span>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 4px;">Marie-Hélène SALVI</h2>
+                    <h3 class="blossom-text" style="font-size: 1.35rem; font-style: italic; margin-bottom: 14px;">Praticienne certifiée en Réflexologie Plantaire</h3>
+
+                    <div class="quote-box">
+                        <i class="fa-solid fa-quote-left"></i>
+                        « En 20 ans d’expérience en tant que secrétaire médicale, j’ai pu constater combien le stress, les tensions physiques et émotionnelles peuvent perturber notre santé. Mon but est aujourd’hui d’apporter du bien-être à autrui, d’aider chacun à retrouver un meilleur équilibre dans son corps et dans sa tête. »
+                    </div>
+
+                    <ul class="credentials-list">
+                        <li>
+                            <i class="fa-solid fa-award"></i>
+                            <span><strong>Certifiée par Édulys Formation :</strong> Titre de Praticienne en Réflexologie Plantaire (formation suivie en présentiel à Buffard).</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-hand-holding-medical"></i>
+                            <span><strong>20 ans dans le milieu médical :</strong> Une écoute attentive, douce, bienveillante et respectueuse de chacun.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-house-chimney-heart"></i>
+                            <span><strong>Accueil personnalisé :</strong> Réception exclusivement sur rendez-vous à mon domicile à Voujeaucourt.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel-light diploma-card">
+                    <img src="IMG_20260707_082948.jpg"
+                         alt="Certificat Édulys Formation de Praticienne en Réflexologie Plantaire - Marie-Hélène SALVI"
+                         class="zoomable">
+                    <span class="photo-caption" style="margin-top: 10px;">
+                        <i class="fa-solid fa-certificate blossom-text"></i> Certificat Édulys Formation (cliquer pour agrandir)
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION : TARIFS -->
+        <section class="tarifs" id="tarifs">
+            <span class="section-badge fade-up">Prestations & Formules</span>
+            <h2 class="section-title fade-up">Tarifs des Séances</h2>
+            <p class="section-subtitle fade-up">
+                Paiement accepté par <strong>chèques ou espèces</strong>.
+            </p>
+
+            <div class="pricing-cards">
+                <!-- Séance Adulte -->
+                <div class="glass-panel price-card fade-up">
+                    <div class="price-icon">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3>Séance de réflexologie plantaire adulte</h3>
+                    <span class="price-duration"><i class="fa-regular fa-clock"></i> (environ 1 heure)</span>
+                    <div class="price-amount" style="margin-bottom: 30px;">50 €</div>
+                    <div style="flex-grow: 1;"></div>
+                    <a href="#contact" class="btn-primary full-width">Réserver une séance adulte</a>
+                </div>
+
+                <!-- Séance Enfant -->
+                <div class="glass-panel price-card fade-up" style="transition-delay: 0.15s;">
+                    <div class="price-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Séance de réflexologie plantaire enfant</h3>
+                    <span class="price-duration"><i class="fa-regular fa-clock"></i> (environ 30 mn)</span>
+                    <div class="price-amount" style="margin-bottom: 30px;">30 €</div>
+                    <div style="flex-grow: 1;"></div>
+                    <a href="#contact" class="btn-secondary full-width">Réserver une séance enfant</a>
+                </div>
+            </div>
+
+            <!-- Bannière Promotionnelle -->
+            <div class="glass-panel promo-banner fade-up">
+                <div class="promo-banner-text">
+                    <h3><i class="fa-solid fa-gift"></i> Offre Spéciale Découverte</h3>
+                    <p>Jusqu’au <strong>31/12/2026</strong>, <strong>la 3ème séance vous est offerte</strong> !</p>
+                </div>
+                <a href="#contact" class="btn-primary">En profiter maintenant</a>
+            </div>
+        </section>
+
+        <!-- SECTION : CONTACT -->
+        <section class="contact" id="contact">
+            <div class="glass-panel contact-container fade-up">
+                <div class="contact-header">
+                    <span class="section-badge">À Votre Écoute</span>
+                    <h2>Prendre Rendez-Vous</h2>
+                    <p>Je vous reçois sur rendez-vous. Contactez-moi par téléphone, par e-mail ou via le formulaire ci-dessous.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Formulaire configuré pour envoyer des emails via FormSubmit -->
+                    <form id="contact-form" action="https://formsubmit.co/lbeavp@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Nouvelle demande de RDV - Site Réflexologie">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom & Prénom *</label>
+                                <input type="text" id="nom" name="Nom_Prenom" placeholder="Votre nom complet" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse E-mail *</label>
+                                <input type="email" id="email" name="Email" placeholder="votre.email@exemple.fr" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tel">Téléphone *</label>
+                                <input type="tel" id="tel" name="Telephone" placeholder="06 00 00 00 00" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="prestation">Séance souhaitée</label>
+                                <select id="prestation" name="Prestation_souhaitee">
+                                    <option value="Séance Adulte (50 €)">Séance de réflexologie plantaire adulte (50 €)</option>
+                                    <option value="Séance Enfant (30 €)">Séance de réflexologie plantaire enfant (30 €)</option>
+                                    <option value="Demande de renseignements">Demande de renseignements</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Votre message ou vos disponibilités *</label>
+                            <textarea id="message" name="Message" rows="4" placeholder="Précisez vos disponibilités ou la raison de votre venue..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary full-width">
+                            Envoyer ma demande <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <div class="contact-info-panel glass-panel-light">
+                        <h3>Coordonnées</h3>
+                        <div class="info-item">
+                            <i class="fa-solid fa-spa"></i>
+                            <div>
+                                <strong>Marie-Hélène SALVI E.I.</strong>
+                                <p>Praticienne en Réflexologie Plantaire</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Lieu de réception</strong>
+                                <p>11, rue des chevalières<br>25420 VOUJEAUCOURT</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <p><a href="tel:0633143485">06 33 14 34 85</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <p><a href="mailto:lbeavp@gmail.com">lbeavp@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox pour agrandir les photos -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="Aperçu agrandi" class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Footer Centré -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fa-solid fa-spa"></i> Marie-Hélène SALVI E.I.
+                </div>
+                <p>Le bien-être à vos pieds — Réflexologie Plantaire à Voujeaucourt (25420).</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#reflexologie">La Réflexologie</a></li>
+                    <li><a href="#seance">Déroulement d'une séance</a></li>
+                    <li><a href="#tarifs">Tarifs & Offre 3ème séance offerte</a></li>
+                    <li><a href="#contact">Contact & Rendez-vous</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact Direct</h4>
+                <ul>
+                    <li><a href="tel:0633143485"><i class="fa-solid fa-phone blossom-text"></i> 06 33 14 34 85</a></li>
+                    <li><a href="mailto:lbeavp@gmail.com"><i class="fa-solid fa-envelope blossom-text"></i> lbeavp@gmail.com</a></li>
+                    <li><span style="color: var(--text-muted); font-size: 0.9rem;"><i class="fa-solid fa-location-dot sage-text"></i> 11, rue des chevalières, 25420 Voujeaucourt</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Marie-Hélène SALVI E.I. — Le bien-être à vos pieds. Tous droits réservés. La réflexologie ne remplace en aucun cas la médecine.</p>
+        </div>
+    </footer>
+
+    <!-- Bannière RGPD Sticky -->
+    <div id="cookie-banner" class="cookie-banner-sticky" style="display: none;">
+        <div class="cookie-banner-content">
+            <p>
+                <strong><i class="fa-solid fa-cookie-bite"></i> Paramètres des cookies</strong>
+                Ce site utilise uniquement des cookies strictement nécessaires à son fonctionnement technique et ne dépose aucun traceur publicitaire ou de suivi d'audience. En continuant votre navigation, vous acceptez l'utilisation de ces cookies essentiels. <a href="mentions-legales.html">En savoir plus dans notre politique de confidentialité</a>.
+            </p>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="accept-cookies" class="btn-primary">Compris et accepter</button>
+        </div>
+    </div>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+
+    <!-- Script spécifique à la bannière de cookies -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptBtn = document.getElementById('accept-cookies');
+
+            if (cookieBanner && acceptBtn) {
+                // Vérifier si l'utilisateur a déjà accepté
+                if (!localStorage.getItem('cookiesAccepted')) {
+                    cookieBanner.style.display = 'flex';
+                }
+
+                // Gérer le clic sur "Accepter"
+                acceptBtn.addEventListener('click', () => {
+                    localStorage.setItem('cookiesAccepted', 'true');
+                    cookieBanner.style.opacity = '0';
+                    cookieBanner.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        cookieBanner.style.display = 'none';
+                    }, 400);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
